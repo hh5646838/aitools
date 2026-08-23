@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JoJo AI Toolbox</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 星空背景 -->
+  <div id="starry-bg"></div>
+
+  <!-- 主内容区域 -->
+  <div class="main-container">
+    <!-- 漂浮头像区域 -->
+    <div class="hero-section">
+      <div class="floating-avatar" id="avatar-container">
+        <div class="avatar-wrapper">
+          <img id="avatar-img" src="" alt="头像">
+          <div class="avatar-placeholder">J</div>
+        </div>
+        <div class="floating-text-wrapper">
+          <span class="follow-badge">关注我</span>
+          <div class="handwritten-title" id="floating-text">JoJocharm</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 正文内容 -->
+    <section class="content-section" id="content-text">
+      欢迎来到 JoJo AI Toolbox，这里汇集了最实用的 AI 工具。
+    </section>
+
+    <!-- 筛选按钮 -->
+    <div class="filter-section" id="filter-buttons"></div>
+
+    <!-- 工具网格 -->
+    <div class="tools-grid" id="tools-grid"></div>
+
+    <!-- 底部留白 -->
+    <div class="footer-spacer"></div>
+  </div>
+
+  <!-- 公众号弹窗 -->
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal-content">
+      <button class="modal-close" id="modal-close">&times;</button>
+      <h3 class="modal-title" id="modal-title">关注公众号</h3>
+      <div class="qr-container">
+        <img id="qr-code" src="" alt="公众号二维码">
+        <div class="qr-placeholder">二维码占位</div>
+      </div>
+      <div class="copy-section">
+        <input type="text" id="account-input" readonly>
+        <button class="copy-btn" id="copy-btn">复制</button>
+      </div>
+      <p class="copy-tip" id="copy-tip"></p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

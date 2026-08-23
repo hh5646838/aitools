@@ -1,0 +1,98 @@
+{
+  "_comment": "===========================================\n  JoJo AI Toolbox - 网站配置文件\n  修改此文件即可自定义整个网站内容\n  ===========================================",
+  "title": "JoJo AI Toolbox",
+  "avatar": {
+    "_comment": "头像配置 - 点击头像可触发公众号弹窗",
+    "url": "",
+    "size": 120,
+    "left": "8%",
+    "top": "12%"
+  },
+  "floatingText": {
+    "_comment": "漂浮文字配置 - 艺术化手写体",
+    "text": "JoJocharm",
+    "fontSize": "2.5rem",
+    "left": "8%",
+    "top": "28%"
+  },
+  "wechatModal": {
+    "_comment": "公众号弹窗配置 - 点击头像或文字触发",
+    "qrCodeUrl": "",
+    "accountName": "JoJoCharmOfficial",
+    "title": "关注公众号"
+  },
+  "contentText": "欢迎来到 JoJo AI Toolbox，这里汇集了最实用的 AI 工具。无论你是创作者、开发者还是普通用户，都能在这里找到适合自己的效率神器。探索、体验、创造，让 AI 成为你工作和生活的得力助手。",
+  "filterTags": [
+    { "id": "all", "name": "全部" },
+    { "id": "image", "name": "图像" },
+    { "id": "text", "name": "文本" },
+    { "id": "code", "name": "代码" },
+    { "id": "audio", "name": "音频" }
+  ],
+  "modules": [
+    {
+      "id": "module-1",
+      "title": "AI 绘画",
+      "description": "文生图、图生图，释放创意",
+      "imageUrl": "",
+      "link": "https://example.com/ai-paint",
+      "tags": ["image"]
+    },
+    {
+      "id": "module-2",
+      "title": "智能写作",
+      "description": "文章生成、润色改写",
+      "imageUrl": "",
+      "link": "https://example.com/ai-write",
+      "tags": ["text"]
+    },
+    {
+      "id": "module-3",
+      "title": "代码助手",
+      "description": "代码生成、Bug 修复",
+      "imageUrl": "",
+      "link": "https://example.com/ai-code",
+      "tags": ["code"]
+    },
+    {
+      "id": "module-4",
+      "title": "语音合成",
+      "description": "文字转语音，多种音色",
+      "imageUrl": "",
+      "link": "https://example.com/ai-voice",
+      "tags": ["audio"]
+    },
+    {
+      "id": "module-5",
+      "title": "图像修复",
+      "description": "老照片修复、画质增强",
+      "imageUrl": "",
+      "link": "https://example.com/ai-restore",
+      "tags": ["image"]
+    },
+    {
+      "id": "module-6",
+      "title": "文档总结",
+      "description": "长文提炼、要点提取",
+      "imageUrl": "",
+      "link": "https://example.com/ai-summary",
+      "tags": ["text"]
+    },
+    {
+      "id": "module-7",
+      "title": "代码解释",
+      "description": "复杂代码逐行解析",
+      "imageUrl": "",
+      "link": "https://example.com/ai-explain",
+      "tags": ["code"]
+    },
+    {
+      "id": "module-8",
+      "title": "音乐生成",
+      "description": "AI 作曲、风格迁移",
+      "imageUrl": "",
+      "link": "https://example.com/ai-music",
+      "tags": ["audio"]
+    }
+  ]
+}
