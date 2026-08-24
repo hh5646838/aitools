@@ -81,7 +81,7 @@ function initContentText() {
   if (config.contentText) {
     // 将换行转换为段落，支持空行分隔
     const paragraphs = config.contentText.split('\n').map(p => p.trim());
-    contentSection.innerHTML = paragraphs.map(p => p ? `<p>${p}</p>` : '<br>').join('');
+    contentSection.innerHTML = paragraphs.map(p => p ? `<p style="text-indent:0">${p}</p>` : '<br>').join('');
   }
 }
 
