@@ -79,9 +79,9 @@ function initAvatar() {
 function initContentText() {
   const contentSection = document.getElementById('content-text');
   if (config.contentText) {
-    // 将换行转换为段落
-    const paragraphs = config.contentText.split('\n').filter(p => p.trim());
-    contentSection.innerHTML = paragraphs.map(p => `<p>${p}</p>`).join('');
+    // 将换行转换为段落，支持空行分隔
+    const paragraphs = config.contentText.split('\n').map(p => p.trim());
+    contentSection.innerHTML = paragraphs.map(p => p ? `<p>${p}</p>` : '<br>').join('');
   }
 }
 

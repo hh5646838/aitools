@@ -3,7 +3,7 @@
   "title": "JoJo AI Toolbox",
   "avatar": {
     "_comment": "头像配置 - 点击头像可触发公众号弹窗",
-    "url": "https://res.cloudinary.com/vljhnkvn/image/upload/w_300,f_auto,q_auto/v1787087515/logo_jojo.jpg",
+    "url": "",
     "size": 120,
     "left": "8%",
     "top": "12%"
@@ -18,30 +18,30 @@
   "wechatModal": {
     "_comment": "公众号弹窗配置 - 点击头像或文字触发",
     "qrCodeUrl": "",
-    "accountName": "JoJo的AI工具箱",
+    "accountName": "JoJoCharmOfficial",
     "title": "关注公众号"
   },
-  "contentText": "欢迎来到 JoJo AI Toolbox，这里汇集了最实用的运营者 AI 工具。无论你是创作者、前端工作者还是普通用户，都能在这里找到适合自己的效率神器。探索、体验、创造，让 AI 成为你工作和生活的得力助手。本站的工具均是免费使用，普通的工具使用到一定次数会调弹窗，但并非强制性阅读，可以自行关闭。但是为了网站能长久的运行下去，还是需要用户自觉的点击广告来维持网站的基本运作，另外阅读文章可以更好的使用这些工具，我会在文章中教你怎么灵活使用。另一类是有api调用的工具我会限制使用次数，避免滥用，因为会产生AI大模型的调用费用和网站拥堵，所以此类应用的文章广告是必读的，而且必须点击文末广告和原文才能解锁新的使用次数。",
+  "contentText": "欢迎来到 JoJo AI Toolbox，这里汇集了最实用的 AI 工具。无论你是创作者、开发者还是普通用户，都能在这里找到适合自己的效率神器。探索、体验、创造，让 AI 成为你工作和生活的得力助手。",
   "filterTags": [
     { "id": "all", "name": "全部" },
-    { "id": "image", "name": "排版工具" },
-    { "id": "text", "name": "文本检查" },
-    { "id": "code", "name": "图像工具" },
-    { "id": "audio", "name": "待开发" }
+    { "id": "image", "name": "图像" },
+    { "id": "text", "name": "文本" },
+    { "id": "code", "name": "代码" },
+    { "id": "audio", "name": "音频" }
   ],
   "modules": [
     {
       "id": "module-1",
-      "title": "公众号Markdown排版",
-      "description": "Markdown文本自动排版，一键复制，多种预设风格，自定义风格",
+      "title": "AI 绘画",
+      "description": "文生图、图生图，释放创意",
       "imageUrl": "",
       "link": "https://example.com/ai-paint",
       "tags": ["image"]
     },
     {
       "id": "module-2",
-      "title": "朱雀检查工具",
-      "description": "文章Ai率检查、标注句子修改建议",
+      "title": "智能写作",
+      "description": "文章生成、润色改写",
       "imageUrl": "",
       "link": "https://example.com/ai-write",
       "tags": ["text"]
