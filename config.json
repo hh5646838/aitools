@@ -21,13 +21,13 @@
     "accountName": "JoJoCharmOfficial",
     "title": "关注公众号"
   },
-  "contentText": "欢迎来到 JoJo AI Toolbox，这里汇集了最实用的 AI 工具。无论你是创作者、开发者还是普通用户，都能在这里找到适合自己的效率神器。探索、体验、创造，让 AI 成为你工作和生活的得力助手。",
+  "contentText": "欢迎来到 JoJo AI Toolbox，这里汇集了最实用的 AI 工具，让 AI 成为你工作的得力助手。\n\n这里的工具都是免费的。普通工具不会限制使用次数，但需要各位用户自觉阅读和点击文章广告来维持网站运行。有api调用的工具会限制次数，避免滥用，但是可以通过点广告和文末跳转原文来解锁新的次数，另一个方式是粘贴你自己的api来使用。",
   "filterTags": [
     { "id": "all", "name": "全部" },
-    { "id": "image", "name": "图像" },
-    { "id": "text", "name": "文本" },
-    { "id": "code", "name": "代码" },
-    { "id": "audio", "name": "音频" }
+    { "id": "image", "name": "排版" },
+    { "id": "text", "name": "文本检测" },
+    { "id": "code", "name": "图像" },
+    { "id": "audio", "name": "待开发" }
   ],
   "modules": [
     {
