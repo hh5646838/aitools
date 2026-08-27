@@ -34,8 +34,8 @@
     {
       "id": "module-1",
       "title": "公众号一键排版",
-      "description": "粘贴markdown文本一键排版，一键复制富文本",
-      "imageUrl": "",
+      "description": "markdown文本一键排版，一键复制富文本",
+      "imageUrl": "https://res.cloudinary.com/vljhnkvn/image/upload/w_800,f_auto,q_auto/v1787849790/Weixin_Image_20260828004526_2743_2.jpg",
       "link": "https://example.com/ai-paint",
       "tags": ["text"]
     },
@@ -43,31 +43,31 @@
       "id": "module-2",
       "title": "朱雀AI率检测",
       "description": "检测AI文本生成率，指出修改建议",
-      "imageUrl": "",
+      "imageUrl": "https://res.cloudinary.com/vljhnkvn/image/upload/v1787849793/Weixin_Image_20260828004525_2742_2.jpg",
       "link": "https://example.com/ai-write",
       "tags": ["text"]
     },
     {
       "id": "module-3",
       "title": "图像压缩与格式转换",
-      "description": "支持jpg, png, tiff, webp, tga, avif 等格式图片 ",
-      "imageUrl": "",
+      "description": "jpg, png, tiff, webp, tga, avif 等格式图片 ",
+      "imageUrl": "https://res.cloudinary.com/vljhnkvn/image/upload/v1787849792/Weixin_Image_20260828004524_2741_2.jpg",
       "link": "https://example.com/ai-code",
       "tags": ["image"]
     },
     {
       "id": "module-4",
-      "title": "股票持仓比例统计",
-      "description": "输入持仓数据，显示持仓比例，一键导出长图",
-      "imageUrl": "",
-      "link": "https://example.com/ai-voice",
-      "tags": ["data", "image"]
+      "title": "渐变色与色卡生成",
+      "description": "导入照片生成色卡，一键导入渐变色，导出图片",
+      "imageUrl": "https://res.cloudinary.com/vljhnkvn/image/upload/v1787849791/Weixin_Image_20260828004521_2738_2.jpg",
+      "link": "https://example.com/ai-explain",
+      "tags": ["image"]
     },
     {
       "id": "module-5",
       "title": "减脂健身热量计算器",
       "description": "估算TDEE，选择不同热量食物，输出今日热量摄入计划长图",
-      "imageUrl": "",
+      "imageUrl": "https://res.cloudinary.com/vljhnkvn/image/upload/v1787849790/Weixin_Image_20260828004519_2735_2.jpg",
       "link": "https://example.com/ai-restore",
       "tags": ["data", "image"]
     },
@@ -75,17 +75,17 @@
       "id": "module-6",
       "title": "二维码生成器",
       "description": "输入网址链接，生成QRcode方图或个性卡片",
-      "imageUrl": "",
+      "imageUrl": "https://res.cloudinary.com/vljhnkvn/image/upload/v1787849790/Weixin_Image_20260828004521_2737_2.jpg",
       "link": "https://example.com/ai-summary",
       "tags": ["image"]
     },
     {
       "id": "module-7",
-      "title": "渐变色与色卡生成",
-      "description": "导入照片生成色卡，一键导入渐变色，支持导出css和图片",
-      "imageUrl": "",
-      "link": "https://example.com/ai-explain",
-      "tags": ["image"]
+      "title": "股票持仓比例统计",
+      "description": "输入持仓数据，显示持仓比例，一键导出长图",
+      "imageUrl": "https://res.cloudinary.com/vljhnkvn/image/upload/v1787849791/Weixin_Image_20260828004522_2739_2.jpg",
+      "link": "https://example.com/ai-voice",
+      "tags": ["data", "image"]
     },
     {
       "id": "module-8",
@@ -93,13 +93,13 @@
       "description": "PDF图片互转，拆分PDF，转Word文本，添加水印，旋转页面",
       "imageUrl": "",
       "link": "https://example.com/ai-music",
-      "tags": ["image", "document"]
+      "tags": ["document"]
     },
     {
       "id": "module-9",
       "title": "违规词检测",
       "description": "检测公众号违规词",
-      "imageUrl": "",
+      "imageUrl": "https://res.cloudinary.com/vljhnkvn/image/upload/v1787849790/Weixin_Image_20260828004520_2736_2.jpg",
       "link": "https://example.com/ai-music",
       "tags": ["plan"]
     }
