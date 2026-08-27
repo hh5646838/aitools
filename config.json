@@ -3,7 +3,7 @@
   "title": "JoJo AI Toolbox",
   "avatar": {
     "_comment": "头像配置 - 点击头像可触发公众号弹窗",
-    "url": "",
+    "url": "https://res.cloudinary.com/vljhnkvn/image/upload/w_300,f_auto,q_auto/v1787087515/logo_jojo.jpg",
     "size": 120,
     "left": "8%",
     "top": "12%"
@@ -18,81 +18,90 @@
   "wechatModal": {
     "_comment": "公众号弹窗配置 - 点击头像或文字触发",
     "qrCodeUrl": "",
-    "accountName": "JoJoCharmOfficial",
+    "accountName": "JoJo的AI站",
     "title": "关注公众号"
   },
-  "contentText": "欢迎来到 JoJo AI Toolbox，这里汇集了最实用的 AI 工具。无论你是创作者、开发者还是普通用户，都能在这里找到适合自己的效率神器。探索、体验、创造，让 AI 成为你工作和生活的得力助手。",
+  "contentText": "欢迎来到 JoJo AI Toolbox，这里汇集了最实用的 AI 工具。无论你是创作者、开发者还是普通用户，都能在这里找到适合自己的效率神器。",
   "filterTags": [
     { "id": "all", "name": "全部" },
-    { "id": "image", "name": "图像" },
-    { "id": "text", "name": "文本" },
-    { "id": "code", "name": "代码" },
-    { "id": "audio", "name": "音频" }
+    { "id": "image", "name": "图像生成与处理" },
+    { "id": "text", "name": "文本处理与检测" },
+    { "id": "data", "name": "数据统计与规划" },
+    { "id": "document", "name": "文件转换" }
+    { "id": "plan", "name": "待开发" }
   ],
   "modules": [
     {
       "id": "module-1",
-      "title": "AI 绘画",
-      "description": "文生图、图生图，释放创意",
+      "title": "公众号一键排版",
+      "description": "粘贴markdown文本一键排版，一键复制富文本",
       "imageUrl": "",
       "link": "https://example.com/ai-paint",
-      "tags": ["image"]
+      "tags": ["text"]
     },
     {
       "id": "module-2",
-      "title": "智能写作",
-      "description": "文章生成、润色改写",
+      "title": "朱雀AI率检测",
+      "description": "检测AI文本生成率，指出修改建议",
       "imageUrl": "",
       "link": "https://example.com/ai-write",
       "tags": ["text"]
     },
     {
       "id": "module-3",
-      "title": "代码助手",
-      "description": "代码生成、Bug 修复",
+      "title": "图像压缩与格式转换",
+      "description": "支持jpg, png, tiff, webp, tga, avif 等格式图片 ",
       "imageUrl": "",
       "link": "https://example.com/ai-code",
-      "tags": ["code"]
-    },
-    {
-      "id": "module-4",
-      "title": "语音合成",
-      "description": "文字转语音，多种音色",
-      "imageUrl": "",
-      "link": "https://example.com/ai-voice",
-      "tags": ["audio"]
-    },
-    {
-      "id": "module-5",
-      "title": "图像修复",
-      "description": "老照片修复、画质增强",
-      "imageUrl": "",
-      "link": "https://example.com/ai-restore",
       "tags": ["image"]
     },
     {
+      "id": "module-4",
+      "title": "股票持仓比例统计",
+      "description": "输入持仓数据，显示持仓比例，一键导出长图",
+      "imageUrl": "",
+      "link": "https://example.com/ai-voice",
+      "tags": ["data","image"]
+    },
+    {
+      "id": "module-5",
+      "title": "减脂健身热量计算器",
+      "description": "估算TDEE，选择不同热量食物，输出今日热量摄入计划长图",
+      "imageUrl": "",
+      "link": "https://example.com/ai-restore",
+      "tags": ["data","image"]
+    },
+    {
       "id": "module-6",
-      "title": "文档总结",
-      "description": "长文提炼、要点提取",
+      "title": "二维码生成器",
+      "description": "输入网址链接，生成QRcode方图或个性卡片",
       "imageUrl": "",
       "link": "https://example.com/ai-summary",
-      "tags": ["text"]
+      "tags": ["image"]
     },
     {
       "id": "module-7",
-      "title": "代码解释",
-      "description": "复杂代码逐行解析",
+      "title": "渐变色与色卡生成",
+      "description": "导入照片生成色卡，一键导入渐变色，支持导出css和图片",
       "imageUrl": "",
       "link": "https://example.com/ai-explain",
-      "tags": ["code"]
+      "tags": ["image"]
     },
     {
       "id": "module-8",
-      "title": "音乐生成",
-      "description": "AI 作曲、风格迁移",
+      "title": "pdf处理器",
+      "description": "pdf图片互转，拆分pdf，转world文本，添加水印，旋转页面",
       "imageUrl": "",
       "link": "https://example.com/ai-music",
-      "tags": ["audio"]
+      "tags": ["image","document"]
+    },
+    {
+      "id": "module-9",
+      "title": "违规词检测",
+      "description": "检测公众号违规词",
+      "imageUrl": "",
+      "link": "https://example.com/ai-music",
+      "tags": ["plan"]
     }
   ]
 }
