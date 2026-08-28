@@ -10,7 +10,7 @@
   },
   "floatingText": {
     "_comment": "漂浮文字配置 - 艺术化手写体",
-    "text": "JoJocharm",
+    "text": "JoJocharm.top",
     "fontSize": "2.5rem",
     "left": "8%",
     "top": "28%"
@@ -45,7 +45,7 @@
       "title": "朱雀AI率检测",
       "description": "检测AI文本生成率，指出修改建议",
       "imageUrl": "https://res.cloudinary.com/vljhnkvn/image/upload/w_800,f_auto,q_auto/v1787856123/Weixin_Image_20260828004525_2742_2_compressed.jpg",
-      "link": "https://example.com/ai-write",
+      "link": "https://jojocharm.top/aicatcher",
       "tags": ["text"]
     },
     {
@@ -72,7 +72,7 @@
       "description": "估算TDEE，选择不同热量食物，输出今日热量摄入计划长图",
       "imageUrl": "https://res.cloudinary.com/vljhnkvn/image/upload/w_800,f_auto,q_auto/v1787856122/Weixin_Image_20260828004519_2735_2_compressed.jpg",
       "imagePosition": "43% 60%",
-      "link": "https://example.com/ai-restore",
+      "link": "https://hh5646838.github.io/",
       "tags": ["data", "image"]
     },
     {
