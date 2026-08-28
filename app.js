@@ -6,6 +6,76 @@
 // 全局配置
 let config = null;
 let activeTag = null;
+let masonryResizeTimer = null;
+const MASONRY_GAP = 16;
+
+/**
+ * 获取当前列数（响应式）
+ */
+function getColumnCount() {
+  const width = window.innerWidth;
+  if (width >= 1024) return 4;
+  if (width >= 768) return 3;
+  return 2;
+}
+
+/**
+ * 瀑布流布局核心算法
+ * 每个卡片放到当前最短列，视觉上从左到右填充
+ */
+function layoutMasonry() {
+  const container = document.getElementById('tools-grid');
+  const cards = container.querySelectorAll('.tool-card');
+  if (cards.length === 0) {
+    container.style.height = 'auto';
+    return;
+  }
+
+  const containerWidth = container.offsetWidth;
+  const columnCount = getColumnCount();
+  const cardWidth = (containerWidth - MASONRY_GAP * (columnCount - 1)) / columnCount;
+
+  // 初始化每列高度
+  const columnHeights = new Array(columnCount).fill(0);
+
+  cards.forEach(card => {
+    // 设置卡片宽度
+    card.style.width = `${cardWidth}px`;
+
+    // 找到最短列
+    let minHeight = columnHeights[0];
+    let minIndex = 0;
+    for (let i = 1; i < columnCount; i++) {
+      if (columnHeights[i] < minHeight) {
+        minHeight = columnHeights[i];
+        minIndex = i;
+      }
+    }
+
+    // 设置卡片位置
+    card.style.left = `${minIndex * (cardWidth + MASONRY_GAP)}px`;
+    card.style.top = `${minHeight}px`;
+
+    // 更新列高度
+    columnHeights[minIndex] = minHeight + card.offsetHeight + MASONRY_GAP;
+  });
+
+  // 设置容器高度（减去最后一个多余的 gap）
+  const maxHeight = Math.max(...columnHeights);
+  container.style.height = `${Math.max(0, maxHeight - MASONRY_GAP)}px`;
+}
+
+/**
+ * 防抖触发瀑布流重排
+ */
+function scheduleMasonryRelayout() {
+  if (masonryResizeTimer) {
+    clearTimeout(masonryResizeTimer);
+  }
+  masonryResizeTimer = setTimeout(() => {
+    layoutMasonry();
+  }, 150);
+}
 
 /**
  * 初始化应用
@@ -26,6 +96,9 @@ async function init() {
     initFilterButtons();
     initToolsGrid();
     initModal();
+
+    // 窗口大小变化时防抖重排瀑布流
+    window.addEventListener('resize', scheduleMasonryRelayout);
 
   } catch (error) {
     console.error('加载配置失败:', error);
@@ -61,13 +134,15 @@ function initAvatar() {
   const avatarImg = document.getElementById('avatar-img');
   const floatingText = document.getElementById('floating-text');
 
-  // 设置头像
-  if (config.avatar.url) {
+  // 设置头像（安全检查）
+  if (config.avatar && config.avatar.url) {
     avatarImg.src = config.avatar.url;
   }
 
-  // 设置漂浮文字
-  floatingText.textContent = config.floatingText.text;
+  // 设置漂浮文字（安全检查）
+  if (config.floatingText && config.floatingText.text) {
+    floatingText.textContent = config.floatingText.text;
+  }
 
   // 点击打开弹窗
   container.addEventListener('click', openModal);
@@ -91,14 +166,19 @@ function initContentText() {
 function initFilterButtons() {
   const container = document.getElementById('filter-buttons');
 
+  // 安全检查：filterTags 不存在或为空时不渲染
+  if (!config.filterTags || !Array.isArray(config.filterTags) || config.filterTags.length === 0) {
+    return;
+  }
+
   config.filterTags.forEach(tag => {
     const btn = document.createElement('button');
     btn.className = 'filter-btn';
     btn.textContent = tag.name;
     btn.dataset.tagId = tag.id;
 
-    // 默认选中"全部"
-    if (tag.name === '全部') {
+    // 默认选中"全部"（按 id 判断，避免依赖中文名称）
+    if (tag.id === 'all') {
       btn.classList.add('active');
     }
 
@@ -107,8 +187,8 @@ function initFilterButtons() {
       document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
 
-      // 筛选模块
-      activeTag = tag.name === '全部' ? null : tag.id;
+      // 筛选模块（按 id 判断）
+      activeTag = tag.id === 'all' ? null : tag.id;
       renderToolsGrid();
     });
 
@@ -130,9 +210,15 @@ function renderToolsGrid() {
   const container = document.getElementById('tools-grid');
   container.innerHTML = '';
 
+  // 安全检查：modules 不存在时提示
+  if (!config.modules || !Array.isArray(config.modules)) {
+    container.innerHTML = '<div style="text-align:center;color:#888;padding:40px;">工具配置缺失</div>';
+    return;
+  }
+
   // 筛选模块
   const filteredModules = activeTag
-    ? config.modules.filter(m => m.tags.includes(activeTag))
+    ? config.modules.filter(m => m.tags && m.tags.includes(activeTag))
     : config.modules;
 
   if (filteredModules.length === 0) {
@@ -144,6 +230,38 @@ function renderToolsGrid() {
     const card = createToolCard(module);
     container.appendChild(card);
   });
+
+  // 初始瀑布流布局
+  layoutMasonry();
+
+  // 等待所有图片加载完成后重新布局（确保高度准确）
+  const images = container.querySelectorAll('img');
+  let loadedCount = 0;
+  const totalImages = images.length;
+
+  if (totalImages > 0) {
+    images.forEach(img => {
+      if (img.complete) {
+        loadedCount++;
+        if (loadedCount === totalImages) {
+          layoutMasonry();
+        }
+      } else {
+        img.addEventListener('load', () => {
+          loadedCount++;
+          if (loadedCount === totalImages) {
+            layoutMasonry();
+          }
+        });
+        img.addEventListener('error', () => {
+          loadedCount++;
+          if (loadedCount === totalImages) {
+            layoutMasonry();
+          }
+        });
+      }
+    });
+  }
 }
 
 /**
@@ -161,6 +279,19 @@ function createToolCard(module) {
     const img = document.createElement('img');
     img.src = module.imageUrl;
     img.alt = module.title;
+    img.loading = 'lazy';
+    // 单独调整图片对齐位置（修正主体偏左/偏右的原图）
+    if (module.imagePosition) {
+      img.style.objectPosition = module.imagePosition;
+    }
+    // 图片加载失败时降级为占位符
+    img.addEventListener('error', () => {
+      imageDiv.innerHTML = '';
+      const placeholder = document.createElement('span');
+      placeholder.className = 'tool-placeholder';
+      placeholder.textContent = '图片占位';
+      imageDiv.appendChild(placeholder);
+    });
     imageDiv.appendChild(img);
   } else {
     const placeholder = document.createElement('span');
@@ -201,13 +332,16 @@ function initModal() {
   const closeBtn = document.getElementById('modal-close');
   const copyBtn = document.getElementById('copy-btn');
 
+  // 安全检查：wechatModal 不存在时使用默认值
+  const modalConfig = config.wechatModal || {};
+
   // 设置弹窗内容
-  document.getElementById('modal-title').textContent = config.wechatModal.title;
-  document.getElementById('account-input').value = config.wechatModal.accountName;
+  document.getElementById('modal-title').textContent = modalConfig.title || '关注公众号';
+  document.getElementById('account-input').value = modalConfig.accountName || '';
 
   const qrImg = document.getElementById('qr-code');
-  if (config.wechatModal.qrCodeUrl) {
-    qrImg.src = config.wechatModal.qrCodeUrl;
+  if (modalConfig.qrCodeUrl) {
+    qrImg.src = modalConfig.qrCodeUrl;
   }
 
   // 关闭弹窗
@@ -218,7 +352,7 @@ function initModal() {
 
   // 复制功能
   copyBtn.addEventListener('click', async () => {
-    const accountName = config.wechatModal.accountName;
+    const accountName = (config.wechatModal && config.wechatModal.accountName) || '';
 
     try {
       await navigator.clipboard.writeText(accountName);
