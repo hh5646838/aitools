@@ -37,7 +37,7 @@
       "description": "markdown文本一键排版，一键复制富文本",
       "imageUrl": "https://res.cloudinary.com/vljhnkvn/image/upload/w_800,f_auto,q_auto/v1787856123/Weixin_Image_20260828004526_2743_2_compressed.jpg",
       "imagePosition": "center 40%",
-      "link": "https://example.com/ai-paint",
+      "link": "https://hh5646838.github.io/markdown",
       "tags": ["text"]
     },
     {
@@ -54,7 +54,7 @@
       "description": "jpg, png, tiff, webp, tga, avif 等格式图片 ",
       "imageUrl": "https://res.cloudinary.com/vljhnkvn/image/upload/w_800,f_auto,q_auto/v1787856123/Weixin_Image_20260828004524_2741_2_compressed.jpg",
       "imagePosition": "center 45%",
-      "link": "https://example.com/ai-code",
+      "link": "https://hh5646838.github.io/imagic",
       "tags": ["image"]
     },
     {
@@ -63,7 +63,7 @@
       "description": "导入照片生成色卡，一键导入渐变色，导出图片",
       "imageUrl": "https://res.cloudinary.com/vljhnkvn/image/upload/w_800,f_auto,q_auto/v1787856122/Weixin_Image_20260828004521_2738_2_compressed.jpg",
       "imagePosition": "43% 30%",
-      "link": "https://example.com/ai-explain",
+      "link": "https://hh5646838.github.io/gradients",
       "tags": ["image"]
     },
     {
@@ -80,7 +80,7 @@
       "title": "二维码生成器",
       "description": "输入网址链接，生成QRcode方图或个性卡片",
       "imageUrl": "https://res.cloudinary.com/vljhnkvn/image/upload/w_800,f_auto,q_auto/v1787856122/Weixin_Image_20260828004521_2737_2_compressed.jpg",
-      "link": "https://example.com/ai-summary",
+      "link": "https://hh5646838.github.io/QRcode",
       "tags": ["image"]
     },
     {
@@ -89,7 +89,7 @@
       "description": "输入持仓数据，显示持仓比例，一键导出长图",
       "imageUrl": "https://res.cloudinary.com/vljhnkvn/image/upload/w_800,f_auto,q_auto/v1787856122/Weixin_Image_20260828004522_2739_2_compressed.jpg",
       "imagePosition": "52% 60%",
-      "link": "https://example.com/ai-voice",
+      "link": "https://hh5646838.github.io/stocks",
       "tags": ["data", "image"]
     },
     {
@@ -97,7 +97,7 @@
       "title": "PDF处理器",
       "description": "PDF图片互转，拆分PDF，转Word文本，添加水印，旋转页面",
       "imageUrl": "https://res.cloudinary.com/vljhnkvn/image/upload/w_800,f_auto,q_auto/v1787856122/Weixin_Image_20260828004523_2740_2_compressed.jpg",
-      "link": "https://example.com/ai-music",
+      "link": "https://hh5646838.github.io/pdfconver",
       "tags": ["document"]
     },
     {
@@ -106,7 +106,7 @@
       "description": "检测公众号违规词",
       "imageUrl": "https://res.cloudinary.com/vljhnkvn/image/upload/w_800,f_auto,q_auto/v1787856122/Weixin_Image_20260828004520_2736_2_compressed.jpg",
       "imagePosition": "center 22%",
-      "link": "https://example.com/ai-music",
+      "link": "https://hh5646838.github.io/aicatcher",
       "tags": ["plan"]
     }
   ]
