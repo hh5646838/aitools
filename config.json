@@ -25,23 +25,33 @@
   "filterTags": [
     { "id": "all", "name": "全部" },
     { "id": "image", "name": "图像生成与处理" },
-    { "id": "text", "name": "文本处理与检测" },
-    { "id": "data", "name": "数据统计与规划" },
+    { "id": "text", "name": "文本编辑与检测" },
+    { "id": "chart", "name": "图表工具" },
+    { "id": "data", "name": "日常规划" },
     { "id": "document", "name": "文件转换" },
     { "id": "plan", "name": "待开发" }
   ],
   "modules": [
     {
-      "id": "module-1",
+      "id": "module-1_0",
       "title": "公众号一键排版",
-      "description": "markdown文本一键排版，一键复制富文本",
+      "description": "Markdown一键排版，一键复制富文本",
       "imageUrl": "https://res.cloudinary.com/vljhnkvn/image/upload/w_800,f_auto,q_auto/v1787856123/Weixin_Image_20260828004526_2743_2_compressed.jpg",
       "imagePosition": "center 40%",
       "link": "https://hh5646838.github.io/markdown",
       "tags": ["text"]
     },
     {
-      "id": "module-2",
+      "id": "module-1_1",
+      "title": "Markmoo",
+      "description": "Markdown编辑器，为创作者而生",
+      "imageUrl": "https://res.cloudinary.com/vljhnkvn/image/upload/f_auto,q_auto/v1788197737/Weixin_Image_20260901013210_2782_2_compressed.jpg",
+      "imagePosition": "center 40%",
+      "link": "https://markmoo.jojocharm.top",
+      "tags": ["text"]
+    },
+    {
+      "id": "module-1_2",
       "title": "朱雀AI率检测",
       "description": "检测AI文本生成率，指出修改建议",
       "imageUrl": "https://res.cloudinary.com/vljhnkvn/image/upload/w_800,f_auto,q_auto/v1787856123/Weixin_Image_20260828004525_2742_2_compressed.jpg",
@@ -49,16 +59,7 @@
       "tags": ["text"]
     },
     {
-      "id": "module-3",
-      "title": "图像压缩与格式转换",
-      "description": "jpg, png, tiff, webp, tga, avif 等格式图片 ",
-      "imageUrl": "https://res.cloudinary.com/vljhnkvn/image/upload/w_800,f_auto,q_auto/v1787856123/Weixin_Image_20260828004524_2741_2_compressed.jpg",
-      "imagePosition": "center 45%",
-      "link": "https://hh5646838.github.io/imagic",
-      "tags": ["image"]
-    },
-    {
-      "id": "module-4",
+      "id": "module-2_1",
       "title": "渐变色与色卡生成",
       "description": "导入照片生成色卡，一键导入渐变色，导出图片",
       "imageUrl": "https://res.cloudinary.com/vljhnkvn/image/upload/w_800,f_auto,q_auto/v1787856122/Weixin_Image_20260828004521_2738_2_compressed.jpg",
@@ -67,16 +68,16 @@
       "tags": ["image"]
     },
     {
-      "id": "module-5",
-      "title": "减脂健身热量计算器",
-      "description": "估算TDEE，选择不同热量食物，输出今日热量摄入计划长图",
-      "imageUrl": "https://res.cloudinary.com/vljhnkvn/image/upload/w_800,f_auto,q_auto/v1787856122/Weixin_Image_20260828004519_2735_2_compressed.jpg",
-      "imagePosition": "43% 60%",
-      "link": "https://hh5646838.github.io/calorie",
-      "tags": ["data", "image"]
+      "id": "module-2_2",
+      "title": "图像压缩与格式转换",
+      "description": "jpg, png, tiff, webp, tga, avif 等格式图片 ",
+      "imageUrl": "https://res.cloudinary.com/vljhnkvn/image/upload/w_800,f_auto,q_auto/v1787856123/Weixin_Image_20260828004524_2741_2_compressed.jpg",
+      "imagePosition": "center 45%",
+      "link": "https://hh5646838.github.io/imagic",
+      "tags": ["image"]
     },
     {
-      "id": "module-6",
+      "id": "module-2_3",
       "title": "二维码生成器",
       "description": "输入网址链接，生成QRcode方图或个性卡片",
       "imageUrl": "https://res.cloudinary.com/vljhnkvn/image/upload/w_800,f_auto,q_auto/v1787856122/Weixin_Image_20260828004521_2737_2_compressed.jpg",
@@ -84,13 +85,31 @@
       "tags": ["image"]
     },
     {
-      "id": "module-7",
+      "id": "module-3_1",
+      "title": "减脂健身热量计算器",
+      "description": "估算TDEE，选择不同热量食物，输出今日热量摄入计划长图",
+      "imageUrl": "https://res.cloudinary.com/vljhnkvn/image/upload/w_800,f_auto,q_auto/v1787856122/Weixin_Image_20260828004519_2735_2_compressed.jpg",
+      "imagePosition": "43% 60%",
+      "link": "https://hh5646838.github.io/calorie",
+      "tags": ["data"]
+    },
+    {
+      "id": "module-3_2",
       "title": "股票持仓比例统计",
       "description": "输入持仓数据，显示持仓比例，一键导出长图",
       "imageUrl": "https://res.cloudinary.com/vljhnkvn/image/upload/w_800,f_auto,q_auto/v1787856122/Weixin_Image_20260828004522_2739_2_compressed.jpg",
       "imagePosition": "52% 60%",
       "link": "https://hh5646838.github.io/stocks",
-      "tags": ["data", "image"]
+      "tags": ["data"]
+    },
+    {
+      "id": "module-4_1",
+      "title": "无限脑图",
+      "description": "mermaid脑图三级视图，无限展示",
+      "imageUrl": "https://res.cloudinary.com/vljhnkvn/image/upload/w_800,f_auto,q_auto/v1788200298/Weixin_Image_20260901021439_2783_2_compressed.jpg",
+      "imagePosition": "52% 60%",
+      "link": "https://mindmoo.jojocharm.top",
+      "tags": ["chart"]
     },
     {
       "id": "module-8",
