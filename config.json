@@ -18,7 +18,7 @@
   "wechatModal": {
     "_comment": "公众号弹窗配置 - 点击头像或文字触发",
     "qrCodeUrl": "",
-    "accountName": "JoJo的AI站",
+    "accountName": "JoJo的AI世界",
     "title": "关注公众号"
   },
   "contentText": "欢迎来到 JoJo AI Toolbox，这里汇集了最实用的 AI 工具。无论你是创作者、开发者还是普通用户，都能在这里找到适合自己的效率神器。",
