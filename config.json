@@ -52,7 +52,7 @@
     },
     {
       "id": "module-1_2",
-      "title": "朱雀AI率检测",
+      "title": "赤燕AI率检测",
       "description": "检测AI文本生成率，指出修改建议",
       "imageUrl": "https://res.cloudinary.com/vljhnkvn/image/upload/w_800,f_auto,q_auto/v1787856123/Weixin_Image_20260828004525_2742_2_compressed.jpg",
       "imagePosition": "center 40%",
@@ -110,7 +110,7 @@
       "description": "mermaid脑图三级视图，无限展示",
       "imageUrl": "https://res.cloudinary.com/vljhnkvn/image/upload/w_800,f_auto,q_auto/v1788200298/Weixin_Image_20260901021439_2783_2_compressed.jpg",
       "imagePosition": "52% 60%",
-      "link": "https://mindmoo.jojocharm.top",
+      "link": "https://mindmoo.jojocharm.top/",
       "tags": ["chart"]
     },
     {
