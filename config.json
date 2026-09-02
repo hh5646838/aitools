@@ -83,7 +83,7 @@
       "description": "输入网址链接，生成QRcode方图或个性卡片",
       "imageUrl": "https://res.cloudinary.com/vljhnkvn/image/upload/w_800,f_auto,q_auto/v1787856122/Weixin_Image_20260828004521_2737_2_compressed.jpg",
       "imagePosition": "center 45%",
-      "link": "https://code.jojocharm.top",
+      "link": "https://qrcode.jojocharm.top",
       "tags": ["image"]
     },
     {
