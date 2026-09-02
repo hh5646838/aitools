@@ -3,7 +3,7 @@
   "title": "JoJo AI Toolbox",
   "avatar": {
     "_comment": "头像配置 - 点击头像可触发公众号弹窗",
-    "url": "https://res.cloudinary.com/vljhnkvn/image/upload/w_300,f_auto,q_auto/v1787087515/logo_jojo.jpg",
+    "url": "https://res.cloudinary.com/vljhnkvn/image/upload/w_450,f_auto,q_auto/v1788343455/Weixin_Image_20260902173300_2811_2.png",
     "size": 120,
     "left": "8%",
     "top": "12%"
@@ -17,8 +17,8 @@
   },
   "wechatModal": {
     "_comment": "公众号弹窗配置 - 点击头像或文字触发",
-    "qrCodeUrl": "",
-    "accountName": "JoJo的AI世界",
+    "qrCodeUrl": "https://res.cloudinary.com/vljhnkvn/image/upload/w_450,f_auto,q_auto/v1788343455/Weixin_Image_20260902173300_2811_2.png",
+    "accountName": "JoJocharm",
     "title": "关注公众号"
   },
   "contentText": "欢迎来到 JoJo AI Toolbox，这里汇集了最实用的 AI 工具。无论你是创作者、开发者还是普通用户，都能在这里找到适合自己的效率神器。",
