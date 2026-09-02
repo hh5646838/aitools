@@ -83,7 +83,7 @@
       "description": "输入网址链接，生成QRcode方图或个性卡片",
       "imageUrl": "https://res.cloudinary.com/vljhnkvn/image/upload/w_800,f_auto,q_auto/v1787856122/Weixin_Image_20260828004521_2737_2_compressed.jpg",
       "imagePosition": "center 45%",
-      "link": "https://hh5646838.github.io/QRcode",
+      "link": "https://code.jojocharm.top",
       "tags": ["image"]
     },
     {
@@ -92,7 +92,7 @@
       "description": "估算TDEE，选择不同热量食物，输出今日热量摄入计划长图",
       "imageUrl": "https://res.cloudinary.com/vljhnkvn/image/upload/w_800,f_auto,q_auto/v1787856122/Weixin_Image_20260828004519_2735_2_compressed.jpg",
       "imagePosition": "43% 60%",
-      "link": "https://hh5646838.github.io/calorie",
+      "link": "https://calorie.jojocharm.top",
       "tags": ["data"]
     },
     {
@@ -101,7 +101,7 @@
       "description": "输入持仓数据，显示持仓比例，一键导出长图",
       "imageUrl": "https://res.cloudinary.com/vljhnkvn/image/upload/w_800,f_auto,q_auto/v1787856122/Weixin_Image_20260828004522_2739_2_compressed.jpg",
       "imagePosition": "52% 60%",
-      "link": "https://hh5646838.github.io/stocks",
+      "link": "https://stocks.jojocharm.top",
       "tags": ["data"]
     },
     {
@@ -119,7 +119,7 @@
       "description": "PDF图片互转，拆分PDF，转Word文本，添加水印，旋转页面",
       "imageUrl": "https://res.cloudinary.com/vljhnkvn/image/upload/w_800,f_auto,q_auto/v1787856122/Weixin_Image_20260828004523_2740_2_compressed.jpg",
       "imagePosition": "center 22%",
-      "link": "https://hh5646838.github.io/pdfconver",
+      "link": "https://pdfconver.jojocharm.top",
       "tags": ["document"]
     },
     {
