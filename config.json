@@ -24,11 +24,11 @@
   "contentText": "欢迎来到 JoJo AI Toolbox，这里汇集了最实用的 AI 工具。无论你是创作者、开发者还是普通用户，都能在这里找到适合自己的效率神器。",
   "filterTags": [
     { "id": "all", "name": "全部" },
-    { "id": "nav", "name": "导航" }
+    { "id": "nav", "name": "导航" },
     { "id": "image", "name": "图像生成" },
     { "id": "text", "name": "文本编辑" },
     { "id": "chart", "name": "图表工具" },
-    { "id": "document", "name": "文件处理" },
+    { "id": "document", "name": "文件处理" }
   ],
   "modules": [
     {
@@ -38,8 +38,8 @@
       "imageUrl": "https://res.cloudinary.com/vljhnkvn/image/upload/f_auto,q_auto/v1787053927/samples/landscapes/architecture-signs.jpg",
       "imagePosition": "center 40%",
       "link": "https://nav.jojocharm.top",
-      "tags": ["text"]
-    },    
+      "tags": ["nav"]
+    },
     {
       "id": "module-1_0",
       "title": "公众号一键排版",
@@ -118,7 +118,8 @@
       "description": "代码，电池块绘制mermaid流程图",
       "imageUrl": "https://res.cloudinary.com/vljhnkvn/image/upload/w_800,f_auto,q_auto/v1788249114/0713728bbd4875d0f2a708835128c7c3_compressed.jpg",
       "imagePosition": "center 22%",
-      "link": "https://jojocharm.top",
+      "link": "https://mercharm.jojocharm.top",
       "tags": ["chart"]
     }
+  ]
 }
