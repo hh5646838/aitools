@@ -24,14 +24,22 @@
   "contentText": "欢迎来到 JoJo AI Toolbox，这里汇集了最实用的 AI 工具。无论你是创作者、开发者还是普通用户，都能在这里找到适合自己的效率神器。",
   "filterTags": [
     { "id": "all", "name": "全部" },
-    { "id": "image", "name": "图像生成与处理" },
-    { "id": "text", "name": "文本编辑与检测" },
+    { "id": "nav", "name": "导航" }
+    { "id": "image", "name": "图像生成" },
+    { "id": "text", "name": "文本编辑" },
     { "id": "chart", "name": "图表工具" },
-    { "id": "data", "name": "日常规划" },
-    { "id": "document", "name": "文件转换" },
-    { "id": "plan", "name": "待开发" }
+    { "id": "document", "name": "文件处理" },
   ],
   "modules": [
+    {
+      "id": "module-0_0",
+      "title": "AI导航",
+      "description": "AI模型，评测，开源项目导航",
+      "imageUrl": "https://res.cloudinary.com/vljhnkvn/image/upload/f_auto,q_auto/v1787053927/samples/landscapes/architecture-signs.jpg",
+      "imagePosition": "center 40%",
+      "link": "https://nav.jojocharm.top",
+      "tags": ["text"]
+    },    
     {
       "id": "module-1_0",
       "title": "公众号一键排版",
@@ -44,7 +52,7 @@
     {
       "id": "module-1_1",
       "title": "Markmoo",
-      "description": "Markdown编辑器，为创作者而生",
+      "description": "轻量Markdown编辑器",
       "imageUrl": "https://res.cloudinary.com/vljhnkvn/image/upload/w_800,f_auto,q_auto/v1788197737/Weixin_Image_20260901013210_2782_2_compressed.jpg",
       "imagePosition": "center 40%",
       "link": "https://markmoo.jojocharm.top",
@@ -75,16 +83,7 @@
       "imageUrl": "https://res.cloudinary.com/vljhnkvn/image/upload/w_800,f_auto,q_auto/v1787856123/Weixin_Image_20260828004524_2741_2_compressed.jpg",
       "imagePosition": "center 45%",
       "link": "https://imash.jojocharm.top",
-      "tags": ["image"]
-    },
-    {
-      "id": "module-2_3",
-      "title": "二维码生成器",
-      "description": "输入网址链接，生成QRcode方图或个性卡片",
-      "imageUrl": "https://res.cloudinary.com/vljhnkvn/image/upload/w_800,f_auto,q_auto/v1787856122/Weixin_Image_20260828004521_2737_2_compressed.jpg",
-      "imagePosition": "center 45%",
-      "link": "https://qrcode.jojocharm.top",
-      "tags": ["image"]
+      "tags": ["document"]
     },
     {
       "id": "module-3_1",
@@ -93,16 +92,7 @@
       "imageUrl": "https://res.cloudinary.com/vljhnkvn/image/upload/w_800,f_auto,q_auto/v1787856122/Weixin_Image_20260828004519_2735_2_compressed.jpg",
       "imagePosition": "43% 60%",
       "link": "https://calorie.jojocharm.top",
-      "tags": ["data"]
-    },
-    {
-      "id": "module-3_2",
-      "title": "股票持仓比例统计",
-      "description": "输入持仓数据，显示持仓比例，一键导出长图",
-      "imageUrl": "https://res.cloudinary.com/vljhnkvn/image/upload/w_800,f_auto,q_auto/v1787856122/Weixin_Image_20260828004522_2739_2_compressed.jpg",
-      "imagePosition": "52% 60%",
-      "link": "https://stocks.jojocharm.top",
-      "tags": ["data"]
+      "tags": ["image"]
     },
     {
       "id": "module-4_1",
@@ -123,31 +113,12 @@
       "tags": ["document"]
     },
     {
-      "id": "module-9_0",
-      "title": "违规词检测",
-      "description": "待开发，检测公众号违规词",
-      "imageUrl": "https://res.cloudinary.com/vljhnkvn/image/upload/w_800,f_auto,q_auto/v1787856122/Weixin_Image_20260828004520_2736_2_compressed.jpg",
-      "imagePosition": "center 22%",
-      "link": "https://jojocharm.top",
-      "tags": ["plan"]
-    },
-    {
       "id": "module-9_1",
       "title": "Mercharm",
-      "description": "待开发，电池块绘制流程图，为学者而生",
+      "description": "代码，电池块绘制mermaid流程图",
       "imageUrl": "https://res.cloudinary.com/vljhnkvn/image/upload/w_800,f_auto,q_auto/v1788249114/0713728bbd4875d0f2a708835128c7c3_compressed.jpg",
       "imagePosition": "center 22%",
       "link": "https://jojocharm.top",
-      "tags": ["plan"]
-    },
-    {
-      "id": "module-9_2",
-      "title": "ExcelBridge",
-      "description": "待开发，电池块搭建多表格处理工作流",
-      "imageUrl": "https://res.cloudinary.com/vljhnkvn/image/upload/w_800,f_auto,q_auto/v1788292125/Weixin_Image_20260902000238_2803_2_compressed.jpg",
-      "imagePosition": "center 22%",
-      "link": "https://jojocharm.top",
-      "tags": ["plan"]
+      "tags": ["chart"]
     }
-  ]
 }
