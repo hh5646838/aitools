@@ -111,15 +111,6 @@
       "imagePosition": "center 22%",
       "link": "https://pdfconver.jojocharm.top",
       "tags": ["document"]
-    },
-    {
-      "id": "module-9_1",
-      "title": "Mercharm",
-      "description": "代码，电池块绘制mermaid流程图",
-      "imageUrl": "https://res.cloudinary.com/vljhnkvn/image/upload/w_800,f_auto,q_auto/v1788249114/0713728bbd4875d0f2a708835128c7c3_compressed.jpg",
-      "imagePosition": "center 22%",
-      "link": "https://mercharm.jojocharm.top",
-      "tags": ["chart"]
     }
   ]
 }
